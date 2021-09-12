@@ -24,7 +24,12 @@ int sort(int arr[],int size)
 }
 int main()
 {
-    int arr1[] = {9,7,2,7,1,7,2,3,1,5};
-    sort(arr1,9);
+    int arr1[100], size; 
+    for(i=0;i<size-1;i++)
+    {
+        scanf("%d",&arr1[i]);
+    }
+    scanf("%d",&size);
+    sort(arr1,size);
     
 }
