@@ -1,0 +1,30 @@
+int sort(int arr[],int size)
+{
+    int i,j,k,count=1,temp;
+    for(i=0;i<size-1;i++)
+    {
+        for(j=0;j<size-i-1;j++)
+        {
+            if(arr[i]>arr[i+1])
+            {
+                temp=arr[i];
+                arr[i]=arr[i+1];
+                arr[i+1]=temp;
+            }
+        }
+    }
+    for(i=0;i<size-1;i++)
+    {
+        if(arr[size-1]==arr[i])
+        {
+            count++;
+        }
+    }
+    printf("%d",count);
+}
+int main()
+{
+    int arr1[] = {9,7,2,7,1,7,2,3,1,5};
+    sort(arr1,9);
+    
+}
